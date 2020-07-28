@@ -233,24 +233,11 @@ h3 {
 
 .portada { 
     display: flex;
-
-}
-.imagen-fondo{
-background-image: url(Imagenes/radiografia.jpg);    
-position: relative;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  display: block;
-  width: 100%;
-  -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
-  filter: blur(2px);  
-    background-size: cover;
+    background-image: url(Imagenes/radiografia.jpg); 
+        background-size: cover;
     height: 75vh;
     background-position: center;
+    justify-content: center;
 }
 
 .nombre {
@@ -258,14 +245,10 @@ position: relative;
     justify-content: center;
     background-color:#00000057;
     text-shadow: 0 13px 8px var(--negro),0 -5px 10px var(--negro);
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    padding: 10px;
-    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
 }
 
 h2 {
@@ -305,7 +288,7 @@ h2 {
         font-size: 14px;
     }
     .portada{
-        height: 60vh;
+        height: 50vh;
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -346,6 +329,8 @@ h2 {
 	.consultorios {
         flex-wrap: wrap;
         justify-content: center;
+        padding: 0px;
+        padding-top: 35px;
 	}
 }
 
