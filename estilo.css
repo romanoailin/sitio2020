@@ -24,10 +24,11 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     color: var(--texto);
     scroll-behavior: smooth;
+    line-height: 1.5em;
+    font-family: 'Montserrat', sans-serif;
 }
  
 /* -----------------------------------------------------
@@ -40,9 +41,19 @@
 }
 
 p {
-   font-size: 16px; 
+   
+   
 }
 
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Zilla Slab', serif;
+}
+
+h3 { 
+    color: var(--azul);
+    font-family: 'Zilla Slab', serif;
+}
 /*
 	(anchos) Breakpoints
 	1920 Full HD
@@ -235,12 +246,13 @@ p {
 
 .portada { 
     display: flex;
-    background-image: url(Imagenes/radiografia.jpg); 
+    background-image: url(Imagenes/imagen-home.jpg); 
         background-size: cover;
     height: 75vh;
     background-position: center;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 .nombre {
@@ -315,6 +327,7 @@ p {
     display:flex;
     padding: 30px;
     padding-top: 60px;
+    min-height: 100vh;
 }
 
 @media (max-width: 768px) {
@@ -363,6 +376,7 @@ p {
     padding: 30px;
     padding-top: 60px;
     background-color: var(--azul);
+    min-height: 100vh;
 }
 
 .servicios h1, .servicios h2{
@@ -373,8 +387,8 @@ p {
     display:flex;
     justify-content: space-around;
     margin-top: 10px;  
-    animation: fadeIn;
-    animation-duration: 4s;
+    animation: fadeInLeft;
+    animation-duration: 5s;
 }
 
 .servicios-tipos_item{
@@ -429,12 +443,14 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
 }
 .sobre-mi_imagen{
     display: flex;
     justify-content: center;
     animation: slideInLeft;
     animation-duration: 5s;
+    max-width: 40%;
 
 }
 .imagen-profesional{
@@ -466,7 +482,11 @@ p {
         margin-top: 30px;
         min-width: 100%;
     }
+    .sobre-mi_imagen{
+        max-width: 70%;
+    }
 }
+
 
 /* -----------------------------------------------------
                     BLOG 
@@ -475,17 +495,20 @@ p {
 .blog {
     padding: 0px;
     padding-top: 60px;
+    min-height: 100vh;
 }
 .publicaciones {
     padding: 30px;
     background-image: url(imagenes/radiografia-dibujos.png);
     background-repeat: no-repeat;
     background-position: right;
+    list-style: none;
 }
 
 .publicaciones-item{
     padding: 20px;
-    max-width: 75%;
+    max-width: 60%;
+    padding-left: 35px;
 }
 
 .swiper-instagram{
@@ -519,6 +542,7 @@ p {
     padding: 30px;
     padding-top: 60px;
     display: flex;
+    min-height: 100vh;
 }
 .preguntas {
     padding: 20px;
