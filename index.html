@@ -6,7 +6,9 @@
         <title>Dr. Esteban Romano</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
         <link href="estilo.css" rel="stylesheet">
+        <link href="Imagenes/favico.png" rel="shortcut icon">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     </head>
     <body>
 
@@ -72,7 +74,7 @@
                 <!--<div class="imagen-fondo"></div>-->
                 <div class="nombre">
                     <h2> Conoceme </h2>
-                    <h1> Dr. Esteban Romano <br>
+                    <h1 class="titulo-home"> Dr. Esteban Romano <br>
                         Médico traumatólogo
                     </h1>
                     <button type="button" class="boton-reserva"><a class="boton-link" href="#turnos">¿Buscás un turno?</a>
@@ -91,16 +93,16 @@
                     </div>
                 </div> <!--cierro consultorios info -->
 
-                <ul class="consultorios-lista"> 
-                    <li class="consultorios-lista_item"> <h2>CETYK Deporte</h2>
+                <ul class="consultorios-lista" > 
+                    <li class="consultorios-lista_item" class="wow animate__animated" id="consultorios-lista_item"> <h2>CETYK Deporte</h2>
                         <p>Dirección: 9 de Julio 1917, Lanús Este<br>
                         Teléfono: 011-5806-9406</p>
                     </li>
-                    <li class="consultorios-lista_item"> <h2>OSMEDICA Lanús</h2>
+                    <li class="consultorios-lista_item" class="wow animate__animated" id="consultorios-lista_item"> <h2>OSMEDICA Lanús</h2>
                         <p>Pres. Domingo Faustino Sarmiento 167, Lanús Este <br>
                         Teléfono: 4203-8868 / 4203-7885 / 4205-2874</p>
                     </li>
-                    <li class="consultorios-lista_item"> <h2>ECM Escalada</h2>
+                    <li class="consultorios-lista_item" class="wow animate__animated" id="consultorios-lista_item"> <h2>ECM Escalada</h2>
                         <p>Dirección:Máspero 44, Remedios de Escalada<br>
                         Teléfono:  4247-3463 </p>
                     </li>
@@ -111,7 +113,7 @@
             <div class="servicios" id="servicios"> 
                 <h1>Servicios médicos</h1>
 
-                <div class="servicios-tipos">
+                <div class="servicios-tipos" class="wow animate__animated">
                     <div class="servicios-tipos_item"> 
                         <img src="Imagenes/hueso.png" class="icono-hueso" alt="hueso">
                             <h3> Ortopedia y traumatología general </h3>
@@ -144,12 +146,12 @@
             </div> <!--cierro servicios-->
 
             <div class="sobre-mi" id="sobre-mi">
-                <div class="sobre-mi_imagen">
+                <div class="sobre-mi_imagen" class="wow animate__animated">
                     <img src="Imagenes/el doc.png" alt="#" class="imagen-profesional">
                 </div>
-                <div class="sobre-mi_info">
+                <div class="sobre-mi_info" >
                         <h3>Sobre mi</h3>
-                        <div class="sobre-mi_texto">
+                        <div class="sobre-mi_texto" class="wow animate__animated">
                             <h1>Medico especialista en Ortopedia y Traumatología, UBA</h1> <br>
                             Trabajo en el Hospital Interzonal de Agudos "Evita" de Lanús. Actualmente realizo el posgrado en Medicina del Deporte de la UCA. <br>
                             Desde mis inicios en la medicina me interesé por el aparato locomotor y su patología. Considero que este tipo de afecciones genera gran alteración en la vida normal de mis pacientes, por eso me interesa acompañarlos en el proceso de diagnóstico, tratamiento y rehabilitación. En mis consultas busco que se entienda qué sucedió fisiológicamente y por qué.<br>
@@ -166,9 +168,10 @@
                 <ul class="publicaciones"> 
                     <h1> Blog </h1>
                     <li class="publicaciones-item">
-                        <h1>Resumen de publicaciones</h1>
-                        <p>Un poquito de lorem ipsum por aca <br>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        <h1>Entrevista para Clarín Deportes</h1>
+                        <p> Me consultaron como profesional en la medicina del deporte para dar mi opinión sobre el uso de ciertos medicamentos para la rehabilitación deportiva. <br>
+                            <a href="https://www.clarin.com/zonales/di-lorenzo-futbolista-temperley-consumir-aceite-cannabis-poder-jugar_0_ItT6Yal1.html">Podés ver la nota haciendo click acá</a><br>
+                            
                         </p>
                     </li>
                     <li class="publicaciones-item">
@@ -260,7 +263,7 @@
 
             </div> <!--cierro footer -->
 
-    
+            <script src="js/wow.min.js"></script> <script> new WOW().init();</script>
         </div> <!--cierro contenedor principal-->
     </body> <!--cierro body-->
 </html>

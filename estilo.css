@@ -350,6 +350,8 @@ p {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 5px 5px 12px var(--bordo);
+    animation: fadeInRight;
+    animation-duration: 3s;
 }
 
 /* -----------------------------------------------------
@@ -371,6 +373,8 @@ p {
     display:flex;
     justify-content: space-around;
     margin-top: 10px;  
+    animation: fadeIn;
+    animation-duration: 4s;
 }
 
 .servicios-tipos_item{
@@ -429,6 +433,9 @@ p {
 .sobre-mi_imagen{
     display: flex;
     justify-content: center;
+    animation: slideInLeft;
+    animation-duration: 5s;
+
 }
 .imagen-profesional{
     border-radius: 20px;
@@ -444,6 +451,8 @@ p {
     height: 50%;
     border-radius: 20px;
     margin: 15px;
+    animation: slideInRight;
+    animation-duration: 5s;
 }
 
 .sobre-mi_texto{
@@ -469,10 +478,14 @@ p {
 }
 .publicaciones {
     padding: 30px;
+    background-image: url(imagenes/radiografia-dibujos.png);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .publicaciones-item{
     padding: 20px;
+    max-width: 75%;
 }
 
 .swiper-instagram{
@@ -487,6 +500,15 @@ p {
 .taggbox-container{
     width: 60vw;
     flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+    .publicaciones { 
+        background-image: none;
+    }
+    .publicaciones-item{
+        min-width: 100%;
+    }
 }
 
 /* -----------------------------------------------------
