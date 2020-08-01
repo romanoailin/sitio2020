@@ -216,6 +216,7 @@ h3 {
         display: block;
         opacity: 0.80; 
         margin: 40px;
+        background-color: var(--bordo);
         
     }
 
@@ -491,9 +492,8 @@ h3 {
 .blog {
     padding: 0px;
     padding-top: 60px;
-    min-height: 100vh;
 }
-.publicaciones {
+/*.publicaciones {
     padding: 30px;
     background-image: url(imagenes/radiografia-dibujos.png);
     background-repeat: no-repeat;
@@ -505,7 +505,7 @@ h3 {
     padding: 20px;
     max-width: 60%;
     padding-left: 35px;
-}
+} */
 
 .swiper-instagram{
     padding-bottom: 50px;
