@@ -436,7 +436,7 @@ h3 {
                     SOBRE MI    
 ------------------------------------------------------*/
 .sobre-mi {
-    padding: 30px;
+
     padding-top: 60px;
     
     min-height: 100vh;
@@ -446,6 +446,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 30px;
 }
 .sobre-mi_imagen{
     display: flex;
@@ -570,6 +571,12 @@ h3 {
     line-height: 10px;
     background-color: var(--rosa);
     border: 0px;
+}
+
+@media (max-width: 500px) {
+    .nombre-completo { 
+        flex-direction: column;
+    }
 }
 /* -----------------------------------------------------
                   FOOTER
