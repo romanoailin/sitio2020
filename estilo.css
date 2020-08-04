@@ -589,3 +589,43 @@ h3 {
     align-items: center;
     background-color: var(--bordo);
 }
+
+.lista-contacto{
+    list-style: none;
+    text-align: center;
+}
+
+.lista-direcciones{
+    padding-left: 10px;
+    list-style: none;
+    text-align: end;
+}
+.atajos-navegacion{
+    min-width: 35%;
+}   
+.atajos-navegacion_lista{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.icono-telefono, .icono-mail , .icono-direccion { 
+    fill: var(--rosa);
+}
+.lista-direcciones_item , .lista-contacto_item {
+    font-size: 0.75em;
+}
+@media (max-width: 500px) {
+    .footer { 
+        display: block;
+        padding-top: 30px;
+    }
+    .lista-contacto{
+        padding-bottom: 25px;
+    }
+    .lista-direcciones{
+        padding-bottom: 25px;
+    }
+}
