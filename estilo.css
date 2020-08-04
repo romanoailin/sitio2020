@@ -99,7 +99,7 @@ h3 {
     margin: 10px;
 }
 
-.icono-instagram:hover {
+.icono-instagram::hover {
     fill: var(--grisclaro);
 }
 
@@ -290,13 +290,6 @@ h3 {
 .boton-link {
     text-decoration: none;
 }
-/*.imagen-portada_medico {
-    /* padding: 30px 
-    max-width: 40vw;
-    max-height: 25vw;
-    clip-path: polygon(60% 0px, 100% 0px, 100% 100%, 0% 100%);
-}*/
-
 @media (max-width: 768px) {
     .principal {
         font-size: 14px;
@@ -474,31 +467,30 @@ h3 {
     animation-duration: 5s;
 }
 
-.sobre-mi_texto{
-    padding: 15px;
-}
+
 @media (max-width: 768px) {
-	.sobremi {
+	.sobre-mi_texto{
+    padding: 5px;
+    margin: 0px;
+    }
+    .sobremi {
 		flex-direction: column;
     }
     .sobre-mi_info{
-        margin-top: 30px;
+        
         min-width: 100%;
+        padding: 5px;
+        margin: 0px;
+        margin-top: 30px;
     }
     .sobre-mi_imagen{
         max-width: 70%;
     }
+    .sobremi{
+        padding: 10px;
+    }
 }
 
-
-/* -----------------------------------------------------
-                    BLOG 
-------------------------------------------------------*/
-
-.blog {
-    padding: 0px;
-    padding-top: 60px;
-}
 .swiper-instagram{
     padding-bottom: 50px;
     background-color: var(--rosa);
@@ -513,15 +505,9 @@ h3 {
     flex-grow: 1;
 }
 
-@media (max-width: 768px) {
-    .publicaciones { 
-        background-image: none;
-    }
-    .publicaciones-item{
-        min-width: 100%;
-    }
+.link-turnos:hover{
+    color: var(--rosa);
 }
-
 /* -----------------------------------------------------
                    CONTACTO
 ------------------------------------------------------*/
@@ -545,10 +531,15 @@ h3 {
     color: var(--bordo);
     font-weight: bolder;
     border-radius: 15px;
-    border: 0px;
+    border-style: none;
     background-color: #FFFFFF6E;
     text-align: center;
     padding: 5px;
+    transition: 0.5s;
+}
+
+.formulario-campo:hover , .formulario-campo:focus , .formulario-campo:after{
+    background-color: var(--texto);
 }
 .formulario-contacto{
     display: flex;
@@ -569,8 +560,19 @@ h3 {
     color: var(--azuloscuro);
     padding: 15px;
     line-height: 10px;
-    background-color: var(--rosa);
+    background-color: var(--celeste);
     border: 0px;
+    cursor: pointer;
+    transition-duration: 0.7s;
+    border-radius: 10px;
+}
+
+.enviar-formulario:hover{
+    border-radius: 20px;
+    color: var(--texto);
+    border-style: 1px solid var(--texto);
+    background: rgb(89,138,171);
+    background: linear-gradient(25deg, rgba(89,138,171,1) 4%, rgba(9,9,121,1) 45%, rgba(209,71,86,1) 100%); 
 }
 
 @media (max-width: 500px) {
@@ -623,9 +625,10 @@ h3 {
         padding-top: 30px;
     }
     .lista-contacto{
-        padding-bottom: 25px;
+        padding-bottom: 30px;
+        text-align:right;
     }
     .lista-direcciones{
-        padding-bottom: 25px;
+        padding-bottom: 30px;
     }
 }
