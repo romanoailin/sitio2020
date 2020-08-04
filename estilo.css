@@ -439,6 +439,7 @@ h3 {
     max-width: 40%;
     data-wow-delay: 5s;
     data-wow-offset: 800;
+    padding-left: 20px;
 
 }
 .imagen-profesional{
@@ -471,7 +472,6 @@ h3 {
 		flex-direction: column;
     }
     .sobre-mi_info{
-        
         min-width: 100%;
         padding: 5px;
         margin: 0px;
@@ -482,7 +482,9 @@ h3 {
         data-wow-offset: 800;
     }
     .sobre-mi_imagen{
+        overflow: hidden;
         max-width: 70%;
+        padding: 0px;
     }
     .sobremi{
         padding: 10px;
