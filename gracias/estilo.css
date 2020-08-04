@@ -3,7 +3,7 @@
 body{
     background-color: #093550;
     font-family: 'Zilla Slab', serif;
-    color: white;
+    
 }
 
 .contenedor{
@@ -15,7 +15,8 @@ body{
     text-align: center;
     background-color: #D14756;
     border-radius: 30px;
-    padding: 10px;
+    padding: 15px;
+    color: white;
 }
 
 .volver{
