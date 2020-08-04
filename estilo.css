@@ -50,16 +50,7 @@ h3 {
     color: var(--azul);
     font-family: 'Zilla Slab', serif;
 }
-/*
-	(anchos) Breakpoints
-	1920 Full HD
-	1600
-	1200
-	1024 -> Tablet
-	768  -> Tablet
-	< 767 Mobile
-	370
-*/
+
 /* -----------------------------------------------------
                     CONTENEDOR PRINCIPAL       
 ------------------------------------------------------*/
@@ -68,8 +59,6 @@ h3 {
     max-width: 100vw;
     margin: auto;
 }
-
-
 
 /* -----------------------------------------------------
                     REDES      
@@ -99,8 +88,8 @@ h3 {
     margin: 10px;
 }
 
-.icono-instagram::hover {
-    fill: var(--grisclaro);
+.icono-instagram:hover {
+    fill: var(--bordo);
 }
 
 .icono-linkedin {
@@ -110,7 +99,7 @@ h3 {
 }
 
 .icono-linkedin:hover {
-    fill: var(--grisclaro);
+    fill: var(--bordo);
 }
 
 .horarios {
@@ -157,6 +146,7 @@ h3 {
 .icono-hamburguesa:hover {
     height: 30px;
     width: 30px;
+    fill: var(--rosa);
 }
 
 .nav-principal {
@@ -244,8 +234,7 @@ h3 {
 .portada { 
     display: flex;
     background-image: url(Imagenes/imagen-home-blur.jpg); 
-        background-size: cover;
-    height: 75vh;
+    background-size: cover;
     background-position: center;
     justify-content: center;
     align-items: center;
@@ -355,14 +344,14 @@ h3 {
     border-radius: 10px;
     box-shadow: 5px 5px 12px var(--bordo);
     animation: fadeInRight;
-    animation-duration: 3s;
+    animation-duration: 10s;
     data-wow-delay: 5s;
     data-wow-offset: 100;
 }
 @media (max-width: 768px) {
     .consultorios-lista_item{
-    animation: fadeIn
-    animation-duration: 5s;
+    animation: fadeIn;
+    animation-duration: 10s;
     data-wow-delay: 5s;
     data-wow-offset: 100;
 }
@@ -388,7 +377,7 @@ h3 {
     justify-content: space-around;
     margin-top: 10px;  
     animation: fadeInLeft;
-    animation-duration: 5s;
+    animation-duration: 10s;
     data-wow-delay: 5s;
     data-wow-offset: 100;
 }
@@ -411,7 +400,7 @@ h3 {
         flex-direction: column;
         align-items: center;
         animation: fadeIn;
-        animation-duration: 5s;
+        animation-duration: 10s;
         data-wow-delay: 5s;
         data-wow-offset: 100;
     }
@@ -460,7 +449,7 @@ h3 {
     display: flex;
     justify-content: center;
     animation: slideInLeft;
-    animation-duration: 5s;
+    animation-duration: 10s;
     max-width: 40%;
     data-wow-delay: 5s;
     data-wow-offset: 800;
@@ -481,7 +470,7 @@ h3 {
     border-radius: 20px;
     margin: 15px;
     animation: slideInRight;
-    animation-duration: 5s;
+    animation-duration: 10s;
     data-wow-delay: 5s;
     data-wow-offset: 800;
 }
@@ -502,7 +491,7 @@ h3 {
         margin: 0px;
         margin-top: 30px;
         animation: fadeIn;
-        animation-duration: 5s;
+        animation-duration: 10s;
         data-wow-delay: 5s;
         data-wow-offset: 800;
     }
